@@ -1,0 +1,40 @@
+﻿@page
+@model KoltsegvetesWebApp.Pages.Tranzakciok.IndexModel
+
+<h1>Tranzakciók</h1>
+
+<p><a asp-page="Create">Új tranzakció</a></p>
+
+<form method="get">
+    <label asp-for="Honap">Hónap</label>
+    <input asp-for="Honap" type="month" />
+
+    <label asp-for="KategoriaId">Kategória</label>
+    <select asp-for="KategoriaId" asp-items="Model.KategoriaLista">
+        <option value="">Mind</option>
+    </select>
+
+    <button type="submit">Szűrés</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Dátum</th>
+            <th>Kategória</th>
+            <th>Összeg</th>
+            <th>Megjegyzés</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in Model.Tranzakciok)
+        {
+            <tr>
+                <td>@t.Datum.ToString("yyyy-MM-dd")</td>
+                <td>@t.Kategoria?.Nev</td>
+                <td>@t.Osszeg</td>
+                <td>@t.Megjegyzes</td>
+            </tr>
+        }
+    </tbody>
+</table>

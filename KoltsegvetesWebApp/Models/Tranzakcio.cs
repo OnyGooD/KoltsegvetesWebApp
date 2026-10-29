@@ -7,6 +7,7 @@ namespace KoltsegvetesWebApp.Models
         public int Id { get; set; }
         [Display(Name = "Kategória")]
         public int KategoriaId { get; set; }
+        public Kategoria? Kategoria { get; set; }
         [Range(0.01, double.MaxValue, ErrorMessage = "Az összegnek pozitívnak kell lennie.")]
         [Display(Name = "Összeg")]
         public decimal Osszeg { get; set; }

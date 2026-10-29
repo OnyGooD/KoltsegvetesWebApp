@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj": {}
+    "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj": {
+    "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
+        "projectUniqueName": "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
         "projectName": "KoltsegvetesWebApp",
-        "projectPath": "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
+        "projectPath": "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
         "packagesPath": "C:\\Users\\Tamás\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\obj\\",
+        "outputPath": "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

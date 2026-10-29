@@ -63,6 +63,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/KoltsegvetesWebApp/KoltsegvetesWebApp/Pages/Tranzakciok/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnpha2Npb2tcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/KoltsegvetesWebApp/KoltsegvetesWebApp/Pages/Tranzakciok/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnpha2Npb2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/KoltsegvetesWebApp/KoltsegvetesWebApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

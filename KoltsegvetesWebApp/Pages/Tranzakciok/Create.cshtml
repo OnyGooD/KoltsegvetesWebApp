@@ -1,0 +1,35 @@
+﻿@page
+@model KoltsegvetesWebApp.Pages.Tranzakciok.CreateModel
+
+<h1>Új tranzakció</h1>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div>
+        <label asp-for="Tranzakcio.KategoriaId">Kategória</label>
+        <select asp-for="Tranzakcio.KategoriaId" asp-items="Model.KategoriaLista"></select>
+        <span asp-validation-for="Tranzakcio.KategoriaId"></span>
+    </div>
+
+    <div>
+        <label asp-for="Tranzakcio.Osszeg">Összeg</label>
+        <input asp-for="Tranzakcio.Osszeg" />
+        <span asp-validation-for="Tranzakcio.Osszeg"></span>
+    </div>
+
+    <div>
+        <label asp-for="Tranzakcio.Datum">Dátum</label>
+        <input asp-for="Tranzakcio.Datum" type="date" />
+        <span asp-validation-for="Tranzakcio.Datum"></span>
+    </div>
+
+    <div>
+        <label asp-for="Tranzakcio.Megjegyzes">Megjegyzés</label>
+        <input asp-for="Tranzakcio.Megjegyzes" />
+        <span asp-validation-for="Tranzakcio.Megjegyzes"></span>
+    </div>
+
+    <button type="submit">Mentés</button>
+    <a asp-page="Index">Vissza</a>
+</form>
