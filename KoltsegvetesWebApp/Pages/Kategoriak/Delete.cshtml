@@ -1,0 +1,13 @@
+﻿@page "{id:int}"
+@model KoltsegvetesWebApp.Pages.Kategoriak.DeleteModel
+
+<h1>Kategória törlése</h1>
+
+<div asp-validation-summary="ModelOnly"></div>
+
+<p>Biztosan törölni szeretnéd ezt a kategóriát: <strong>@Model.Kategoria.Nev</strong>?</p>
+
+<form method="post">
+    <button type="submit">Törlés</button>
+    <a asp-page="Index">Vissza</a>
+</form>

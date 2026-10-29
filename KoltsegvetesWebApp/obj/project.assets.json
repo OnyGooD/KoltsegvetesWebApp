@@ -2435,11 +2435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
       "projectName": "KoltsegvetesWebApp",
-      "projectPath": "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
+      "projectPath": "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\KoltsegvetesWebApp.csproj",
       "packagesPath": "C:\\Users\\Tamás\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\obj\\",
+      "outputPath": "C:\\Users\\Tamás\\source\\repos\\KoltsegvetesWebApp\\KoltsegvetesWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmlha1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/KoltsegvetesWebApp/KoltsegvetesWebApp/Pages/Kategoriak/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmlha1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/KoltsegvetesWebApp/KoltsegvetesWebApp/Pages/Kategoriak/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmlha1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

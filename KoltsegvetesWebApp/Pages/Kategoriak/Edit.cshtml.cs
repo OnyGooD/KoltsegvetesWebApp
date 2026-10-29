@@ -1,24 +1,46 @@
-@page "{id:int}"
-@model KoltsegvetesWebApp.Pages.Kategoriak.EditModel
+using KoltsegvetesWebApp.Data;
+using KoltsegvetesWebApp.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
-<h1>Kategória szerkesztése</h1>
+namespace KoltsegvetesWebApp.Pages.Kategoriak
+{
+    public class EditModel : PageModel
+    {
+        private readonly KoltsegvetesDbContext _context;
 
-<form method="post">
-    <div asp-validation-summary="ModelOnly"></div>
+        public EditModel(KoltsegvetesDbContext context)
+        {
+            _context = context;
+        }
 
-    <input type="hidden" asp-for="Kategoria.Id" />
+        [BindProperty]
+        public Kategoria Kategoria { get; set; } = new();
 
-    <div>
-        <label asp-for="Kategoria.Nev">Név</label>
-        <input asp-for="Kategoria.Nev" />
-        <span asp-validation-for="Kategoria.Nev"></span>
-    </div>
+        public async Task<IActionResult> OnGetAsync(int id)
+        {
+            var kategoria = await _context.Kategoriak.FindAsync(id);
+            if (kategoria == null)
+            {
+                return NotFound();
+            }
 
-    <div>
-        <label asp-for="Kategoria.Tipus">Bevétel (ha nincs kipipálva, akkor Kiadás)</label>
-        <input asp-for="Kategoria.Tipus" />
-    </div>
+            Kategoria = kategoria;
+            return Page();
+        }
 
-    <button type="submit">Mentés</button>
-    <a asp-page="Index">Vissza</a>
-</form>
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _context.Attach(Kategoria).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("Index");
+        }
+    }
+}
