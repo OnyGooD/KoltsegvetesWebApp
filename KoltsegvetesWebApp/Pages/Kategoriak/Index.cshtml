@@ -1,0 +1,29 @@
+﻿@page
+@model KoltsegvetesWebApp.Pages.Kategoriak.IndexModel
+
+<h1>Kategóriák</h1>
+
+<p><a asp-page="Create">Új kategória</a></p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Típus</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var k in Model.Kategoriak)
+        {
+            <tr>
+                <td>@k.Nev</td>
+                <td>@(k.Tipus ? "Bevétel" : "Kiadás")</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@k.Id">Szerkesztés</a> |
+                    <a asp-page="Delete" asp-route-id="@k.Id">Törlés</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

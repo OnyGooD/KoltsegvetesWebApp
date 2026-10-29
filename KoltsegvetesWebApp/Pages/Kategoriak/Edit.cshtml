@@ -1,0 +1,24 @@
+﻿@page "{id:int}"
+@model KoltsegvetesWebApp.Pages.Kategoriak.EditModel
+
+<h1>Kategória szerkesztése</h1>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <input type="hidden" asp-for="Kategoria.Id" />
+
+    <div>
+        <label asp-for="Kategoria.Nev">Név</label>
+        <input asp-for="Kategoria.Nev" />
+        <span asp-validation-for="Kategoria.Nev"></span>
+    </div>
+
+    <div>
+        <label asp-for="Kategoria.Tipus">Bevétel (ha nincs kipipálva, akkor Kiadás)</label>
+        <input asp-for="Kategoria.Tipus" />
+    </div>
+
+    <button type="submit">Mentés</button>
+    <a asp-page="Index">Vissza</a>
+</form>
