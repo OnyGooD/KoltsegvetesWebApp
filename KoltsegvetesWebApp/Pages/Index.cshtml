@@ -1,10 +1,26 @@
 ﻿@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
+@model KoltsegvetesWebApp.Pages.IndexModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Háztartási költségvetés</h1>
+
+<h2>@DateTime.Today.ToString("yyyy. MMMM") összesítése</h2>
+
+<table>
+    <tr>
+        <td>Bevétel</td>
+        <td>@Model.Bevetel</td>
+    </tr>
+    <tr>
+        <td>Kiadás</td>
+        <td>@Model.Kiadas</td>
+    </tr>
+    <tr>
+        <td>Egyenleg</td>
+        <td>@Model.Egyenleg</td>
+    </tr>
+</table>
+
+<p>
+    <a asp-page="/Kategoriak/Index">Kategóriák</a> |
+    <a asp-page="/Tranzakciok/Index">Tranzakciók</a>
+</p>
